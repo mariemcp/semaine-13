@@ -1,0 +1,65 @@
+/* "Tenue de Compte" */
+
+
+
+body {
+	background-image: url(images/concrete_seamless.png);
+	font-family: Georgia;
+}
+	
+h1{
+	background-image: url(images/monnaie.jpg);
+	font-family: Georgia;
+	font-size: 50px;
+	text-align: center;
+	letter-spacing:0.5em;
+	word-spacing: 0.5em;
+	color: #088A68;
+	line-height: 2em;
+	text-decoration: underline;
+	border: 5px double;
+	border-radius: 5px;	
+	height: 120px;
+	
+}
+
+h2 {
+	text-align: center;
+	font-size:20px;
+}
+
+p{
+	font-size:14px;	
+}
+
+button{
+	font-size: 25px;
+	width: 250px;
+	height: 2em;
+	border-radius: 10px;
+	color: #088A68;
+}
+#somme {
+	
+	list-style-position: inside;
+}
+input {	
+    width: 10em;
+	height: 2em;
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	font-style: italic;
+	border-radius: 5px;
+}
+
+span {
+    cursor: pointer;
+}
+
+#depense {
+	font-size: 30px;
+	text-decoration: underline;
+	color: #df0101;
+	
+}

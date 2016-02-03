@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>Tenue de compte</title>
+    
+	<link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+ 
+  <body>
+  
+		<h1><strong>TENUE DE COMPTE </strong></h1>
+		
+			
+		<h2><em>Saisissez le montant de vos dépenses, </em><h2>
+		<h2><em>puis cliquez sur "Ajouter la dépense" </em><h2>
+			</br>
+			</br>
+		<div ng-app="app"><center>
+			<div ng-controller="appCtrl">
+				<input ng-model="valeur" placeholder="saisir la somme" />
+					</br>
+					</br>
+				
+				<button ng-click="addDepense()">Ajouter la dépense</button>
+				<ul id="somme">
+					<li ng-repeat="depense in depenses">
+							{{ depense.valeur }} <span ng-click="rmDepense($index)">×</span>
+					</li>
+				</ul>
+					
+					</br>
+				<p><em>Pour supprimer une dépense,</em></p><p><em>vous pouvez cliquer sur la croix située à sa droite.</em></p>
+					</br>
+				
+				<div id="depense"><strong>Total des dépenses : {{ total }} €</strong>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+  
+
+  
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
