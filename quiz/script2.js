@@ -1,9 +1,9 @@
-/* quiz de personnalité QCM */
+// JS du quiz Q.C.M. //
 
 
 (function() {
   var questions = [{
-    question: "Quel est le prénom du personnage joué par Bourvil dans La Grande Vadrouille?",
+    question: "Quel est le prénom du personnage joué par Bourvil dans la Grand Vadrouille?",
     choices: ["Célestin", "Ferdinand", "Augustin", "Clément", "Firmin"],
     correctAnswer: 2
   }, {
@@ -28,10 +28,10 @@
   var selections = []; 
   var quiz = $('#quiz'); 
   
- 
+  
   displayNext();
   
- 
+  
   $('#next').on('click', function (e) {
     e.preventDefault();
     
@@ -41,16 +41,16 @@
     }
     choose();
     
-   
+    
     if (isNaN(selections[questionCounter])) {
-      alert('Cochez une case SVP!');
+      alert('Please make a selection!');
     } else {
       questionCounter++;
       displayNext();
     }
   });
   
-
+  
   $('#prev').on('click', function (e) {
     e.preventDefault();
     
@@ -82,6 +82,7 @@
   $('.button').on('mouseleave', function () {
     $(this).removeClass('active');
   });
+  
   
   
   function createQuestionElement(index) {
@@ -121,7 +122,7 @@
     selections[questionCounter] = +$('input[name="answer"]:checked').val();
   }
   
-  
+ 
   function displayNext() {
     quiz.fadeOut(function() {
       $('#question').remove();
@@ -133,7 +134,7 @@
           $('input[value='+selections[questionCounter]+']').prop('checked', true);
         }
         
-       
+        
         if(questionCounter === 1){
           $('#prev').show();
         } else if(questionCounter === 0){
@@ -162,7 +163,7 @@
       }
     }
     
-    score.append('Vous avez ' + numCorrect + ' bonnes réponses sur ' +
+    score.append('Vous avez ' + numCorrect + ' bonnes réponses sur  ' +
                  questions.length + ' questions!!!');
     return score;
   }
