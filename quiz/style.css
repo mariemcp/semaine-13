@@ -1,0 +1,91 @@
+/* CSS quiz de personnalité */
+
+
+body {
+    font-family: Georgia;
+	background-image: url(images/pink_rice.png);
+	
+}
+img {
+	height: 100px;
+}
+h1 {
+    font-family: Georgia;
+	font-size: 50px;
+	letter-spacing:0.5em;
+	word-spacing: 0.5em;
+	color: #088A68;
+	line-height: 2em;
+	text-decoration: underline;
+}
+h3 {
+	font-family: Georgia;
+	font-size: 20px;
+	color: #088A68;
+}
+#title {
+    text-decoration: underline;
+}
+
+#quiz {
+    text-indent: 5px;
+    display:none;
+	text-align: left;
+	
+}
+
+.button {
+    border:4px solid;
+    border-radius:5px;
+    width: 80px;
+	text-align: center;
+    padding-left:5px;
+    padding-right: 5px;
+    position: relative;
+    float:right;
+    background-color: url(pink_rice.png);
+    color: black;
+    margin: 0 2px 0 2px;
+}
+
+.button.active {
+    background-color: #F8F8FF;
+    color: #525252;
+}
+
+button {
+    position: relative;
+    float:right;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+#container {
+    width:50%;
+    margin:auto;
+    padding: 0 25px 40px 10px;
+    background-color: #088A68;
+    border:4px solid #B0E0E6;
+    border-radius:5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #888;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#prev {
+    display:none;
+}
+
+#start {
+    display:none;
+    width: 120px;
+}
