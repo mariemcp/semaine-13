@@ -1,7 +1,7 @@
 /* quiz de personnalité QCM */
 
 
-(function() {
+$(document).ready(function() {
   var questions = [{
     question: "Quel est le prénom du personnage joué par Bourvil dans La Grande Vadrouille?",
     choices: ["Célestin", "Ferdinand", "Augustin", "Clément", "Firmin"],
